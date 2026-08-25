@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia Performance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Academia Performance</h1>
+    <p>Controle simples de alunos e mensalidades</p>
+  </header>
+
+  <main>
+    <section class="painel">
+      <div class="card">
+        <strong id="totalAlunos">0</strong>
+        <span>Alunos</span>
+      </div>
+
+      <div class="card">
+        <strong id="emDia">0</strong>
+        <span>Em dia</span>
+      </div>
+
+      <div class="card">
+        <strong id="vencidos">0</strong>
+        <span>Vencidos</span>
+      </div>
+    </section>
+
+    <section class="cadastro">
+      <h2>Cadastrar aluno</h2>
+
+      <form id="formAluno">
+        <input type="text" id="nome" placeholder="Nome do aluno" required>
+        <input type="tel" id="telefone" placeholder="Telefone">
+        <input type="number" id="valor" placeholder="Mensalidade R$" required>
+        <input type="date" id="vencimento" required>
+
+        <button type="submit">Cadastrar aluno</button>
+      </form>
+    </section>
+
+    <section class="lista">
+      <h2>Alunos</h2>
+
+      <input
+        type="text"
+        id="busca"
+        placeholder="Buscar aluno..."
+      >
+
+      <div id="listaAlunos"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
